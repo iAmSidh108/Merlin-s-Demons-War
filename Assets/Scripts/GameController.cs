@@ -18,8 +18,6 @@ public class GameController : MonoBehaviour
     public Sprite[] healthNumbers = new Sprite[10];
     public Sprite[] damageNumbers = new Sprite[10];
 
-    public GameObject cardPrefab = null;
-    public Canvas canvas = null;
 
     private void Awake()
     {
@@ -27,8 +25,6 @@ public class GameController : MonoBehaviour
 
         playerDeck.Create();
         enemyDeck.Create();
-
-        DealHands();
     }
     public void Quit()
     {
@@ -37,14 +33,5 @@ public class GameController : MonoBehaviour
     public void skipTurn()
     {
         Debug.Log("Skip Turn...");
-    }
-
-    internal void DealHands()
-    {
-        for(int t = 0; t < 3; t++)
-        {
-            playerDeck.DealCard(playersHand);
-            enemyDeck.DealCard(EnemysHand);
-        }
     }
 }
