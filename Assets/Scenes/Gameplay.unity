@@ -2987,7 +2987,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1479278192
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3932,13 +3932,13 @@ MonoBehaviour:
     - {fileID: 0}
     - {fileID: 0}
     positions:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - {fileID: 1243178450}
+    - {fileID: 385093993}
+    - {fileID: 799496772}
     animNames:
-    - 
-    - 
-    - 
+    - CardDeal1
+    - CardDeal2
+    - CardDeal3
     isPlayers: 1
   EnemysHand:
     cards:
@@ -3946,13 +3946,13 @@ MonoBehaviour:
     - {fileID: 0}
     - {fileID: 0}
     positions:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - {fileID: 670603660}
+    - {fileID: 2115179978}
+    - {fileID: 1353855638}
     animNames:
-    - 
-    - 
-    - 
+    - CardDeal4
+    - CardDeal5
+    - CardDeal6
     isPlayers: 0
   cards:
   - {fileID: 11400000, guid: fa8c0015c3b5eaf49a809a45efd2a65c, type: 2}
@@ -3985,6 +3985,8 @@ MonoBehaviour:
   - {fileID: -519400735672398794, guid: ed8e4ba0971856645b10d13266bcbc6b, type: 3}
   - {fileID: -1344653293438560547, guid: ed8e4ba0971856645b10d13266bcbc6b, type: 3}
   - {fileID: 849386610096671516, guid: ed8e4ba0971856645b10d13266bcbc6b, type: 3}
+  cardPrefab: {fileID: 8781631148595746158, guid: 2bfa295c9f400aa45b6d5cc7e7fc6162, type: 3}
+  canvas: {fileID: 711542348}
 --- !u!4 &2116406330
 Transform:
   m_ObjectHideFlags: 0
@@ -4189,6 +4191,10 @@ PrefabInstance:
     - target: {fileID: 8781631148595746158, guid: 2bfa295c9f400aa45b6d5cc7e7fc6162, type: 3}
       propertyPath: m_Name
       value: Card
+      objectReference: {fileID: 0}
+    - target: {fileID: 8781631148595746158, guid: 2bfa295c9f400aa45b6d5cc7e7fc6162, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2bfa295c9f400aa45b6d5cc7e7fc6162, type: 3}
