@@ -28,7 +28,7 @@ public class GameController : MonoBehaviour
         playerDeck.Create();
         enemyDeck.Create();
 
-        DealHands();
+       StartCoroutine(DealHands());
     }
     public void Quit()
     {
@@ -39,12 +39,16 @@ public class GameController : MonoBehaviour
         Debug.Log("Skip Turn...");
     }
 
-    internal void DealHands()
+    internal IEnumerator DealHands()
     {
+        yield return new WaitForSeconds(1);
         for(int t = 0; t < 3; t++)
         {
             playerDeck.DealCard(playersHand);
             enemyDeck.DealCard(EnemysHand);
+            yield return new WaitForSeconds(1);
         }
     }
+
+    
 }
