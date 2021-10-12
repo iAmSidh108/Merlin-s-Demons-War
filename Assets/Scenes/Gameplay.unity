@@ -1534,6 +1534,7 @@ GameObject:
   - component: {fileID: 771697167}
   - component: {fileID: 771697169}
   - component: {fileID: 771697168}
+  - component: {fileID: 771697170}
   m_Layer: 5
   m_Name: BurnCardImage
   m_TagString: Untagged
@@ -1598,6 +1599,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 771697166}
   m_CullTransparentMesh: 1
+--- !u!114 &771697170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771697166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 928ea3b2be73a2a428cedff80d73c38a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &798759160
 GameObject:
   m_ObjectHideFlags: 0
